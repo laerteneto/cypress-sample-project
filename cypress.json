@@ -20,10 +20,12 @@
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/results/",
+        "mochaFile": "cypress/results/my-test-output.xml",
+        "jenkinsMode": false,
+        "quite": true,
         "overwrite": false,
-        "html": true,
-        "json": true,
-        "xml": true
+        "html": false,
+        "json": true
     },
     "env": {
       "apiUrl": "localhost:3001/",

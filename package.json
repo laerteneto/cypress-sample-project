@@ -17,14 +17,12 @@
     "cy:run:edge": "cypress run --browser edge --headless",
     "cy:run:api": "cypress run --browser chrome --headless --spec \"**/api/**/*.spec.js\"",
 
-    " --- CYPRESS PIPELINE SCRIPTS WITH FILE RESULTS ---- ": "",
-    "test:ui:headless:mocha": "yarn cy:clean:results; yarn cy:run:headless; yarn cy:results",
-
     " --- MOCHAWESOME REPORT SCRIPTS ---- ": "",
-    "cy:results": "yarn cy:merge:results; yarn cy:final:results",
+    "cy:run:headless:mocha": "yarn cy:clean:results && yarn cy:run:headless",
+    "cy:posttest:results": "yarn cy:merge:results && yarn cy:final:results",
     "cy:clean:results": "rm -rf cypress/results/*",
-    "cy:merge:results": "mochawesome-merge cypress/results/*.json > cypress/results/output.json",
-    "cy:final:results": "marge cypress/results/output.json --reportDir cypress/results/"
+    "cy:merge:results": "npx mochawesome-merge 'cypress/results/*.json' > mochawesomeFinal.json",
+    "cy:final:results": "marge mochawesomeFinal.json --reportDir cypress/results/ && mv mochawesomeFinal.json cypress/results/"
   },
   "keywords": [
     "tests",
@@ -39,6 +37,7 @@
     "cypress-waitfor": "^1.1.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
-    "mochawesome-merge": "^4.2.0"
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
   }
 }

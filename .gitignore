@@ -3,3 +3,4 @@ cypress/screenshots/*
 cypress/results/
 .vs
 **/.DS_Store
+test-results.xml
