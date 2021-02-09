@@ -1,4 +1,4 @@
-# First Steps with Cypress
+# Cypress basic sample
 
 In this current repo you will be able to learn a bit more about [Cypress](https://www.cypress.io/). The API documentation is available [here](https://docs.cypress.io/api/api/table-of-contents.html). 
 
@@ -19,7 +19,7 @@ After the completed node's installation, you will need to clone this current rep
 
 > ```bash
 > # Git Links
-> PLACE IN HERE...........................
+> https://github.com/laerteneto/cypress-sample-project
 > ```
 
 ### Installing the dependencies 

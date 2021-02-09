@@ -4,5 +4,5 @@ build:
 	yarn clean && yarn 
 
 test:
-	yarn cy:run
+	yarn cy:run:headless
 	
