@@ -15,6 +15,8 @@ describe('Home page tests', () => {
 
     it('Should display all available sections (women, dresses and t-shirts)', () => {
         homePage.getMenuCategoryLink('Women').should("be.visible")
+        homePage.getMenuCategoryLink('Dresses').should("be.visible")
+        homePage.getMenuCategoryLink('T-shirts').should("be.visible")
     });
 
     it('Search for a product (ex: Printed Chiffon Dress)', () => {

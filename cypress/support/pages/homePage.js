@@ -1,11 +1,11 @@
-import CommonPage from './commonPage'
+import BasePage from './basePage'
 
 const selectors = {
   searchProductInput: '#search_query_top',
   searchProductBtn: '#searchbox > .btn'
 };
 
-class HomePage extends CommonPage{
+class HomePage extends BasePage{
     visit() {
       cy.visit('/');
     }

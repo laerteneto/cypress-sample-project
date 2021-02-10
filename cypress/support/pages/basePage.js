@@ -1,4 +1,4 @@
-class CommonPage {   
+class BasePage {   
    
     selectById(selectBoxId, selectText){
       return cy.get(selectBoxId).select(selectText)
@@ -18,4 +18,4 @@ class CommonPage {
   
   }
   
-export default CommonPage;
+export default BasePage;

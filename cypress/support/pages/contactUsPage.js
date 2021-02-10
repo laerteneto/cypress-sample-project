@@ -1,4 +1,4 @@
-import CommonPage from './commonPage'
+import BasePage from './basePage'
 
 const selectors = {
   selectSubjectId: '#id_contact',
@@ -8,7 +8,7 @@ const selectors = {
   alertSuccessMessage: '//p[@class="alert alert-success"]'
 };
 
-class ContactUsPage extends CommonPage{
+class ContactUsPage extends BasePage{
     
     /**
      * 
