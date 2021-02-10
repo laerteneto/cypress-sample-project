@@ -1,6 +1,6 @@
 node_modules
 cypress/screenshots/*
-cypress/results/
+cypress/test-results/
 .vs
 **/.DS_Store
 test-results.xml
