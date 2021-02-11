@@ -6,7 +6,6 @@
     "integrationFolder": "cypress/integration/",
     "testFiles": ["**/*.feature", "**/*.spec.js"],
     "numTestsKeptInMemory": 15,
-    "screenshotOnRunFailure": false,
     "video": false,
     "defaultCommandTimeout": 10000,
     "viewportWidth": 1920,
@@ -16,7 +15,11 @@
       "runMode": 1,
       "openMode": 0
     },
+    "screenshotOnRunFailure": false,
     "screenshotsFolder": "cypress/test-results/assets/",
+    "screenshotConfig": {
+      "scale": false
+    },
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/test-results/",

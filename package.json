@@ -38,6 +38,8 @@
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0"
+    "mochawesome-report-generator": "^5.1.0",
+    "cypress-plugin-snapshots": "^1.4.4",
+    "dayjs": "^1.8.36"
   }
 }

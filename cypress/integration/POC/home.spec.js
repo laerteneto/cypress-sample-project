@@ -11,6 +11,8 @@ describe('Home page tests', () => {
 
     it('Home screen is diplayed', () => {
         cy.url().should("contain", frontUrl + "index.php");
+        cy.wait(500) // It is recommended by the plugin for some slow machines
+        homePage.checkPageSnapshot()
     });
 
     it('Should display all available sections (women, dresses and t-shirts)', () => {
