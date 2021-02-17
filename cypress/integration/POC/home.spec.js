@@ -1,6 +1,6 @@
 import HomePage from '../../support/pages/homePage';
 
-let frontUrl = Cypress.env('frontUrl');
+
 
 describe('Home page tests', () => {
     const homePage = new HomePage();
@@ -10,8 +10,7 @@ describe('Home page tests', () => {
     });
 
     it('Home screen is diplayed', () => {
-        cy.url().should("contain", frontUrl + "index.php");
-        cy.wait(500) // It is recommended by the plugin for some slow machines
+        cy.url().should("contain", Cypress.env('frontUrl') + "index.php");
         homePage.matchPageSnapshot()
     });
 
