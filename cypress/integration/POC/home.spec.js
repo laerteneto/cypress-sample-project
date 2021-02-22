@@ -1,7 +1,5 @@
 import HomePage from '../../support/pages/homePage';
 
-
-
 describe('Home page tests', () => {
     const homePage = new HomePage();
     
