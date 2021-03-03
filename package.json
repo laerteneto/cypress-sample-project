@@ -33,7 +33,7 @@
   "author": "Laerte Mello",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.5.0",
+    "cypress": "^6.6.0",
     "cypress-xpath": "^1.6.1",
     "cypress-waitfor": "^1.1.0",
     "mocha": "^8.2.1",

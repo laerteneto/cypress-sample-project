@@ -22,8 +22,8 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
   on('before:browser:launch', (browser = {}, launchOptions) => {
     if (browser.family === 'chromium') {
-      // launchOptions.args.push("--ignore-certificate-errors", "--disable-gpu", "--window-size=1920,1080", "--start-maximized", "--no-sandbox", `--proxy-server="direct://"`, "--proxy-bypass-list=*")
-      launchOptions.args.push("--ignore-certificate-errors", "--disable-gpu", "--window-size=1920,1080", "--start-maximized", "--no-sandbox")
+      launchOptions.args.push("--ignore-certificate-errors", "--disable-gpu", "--window-size=1920,1080", "--start-maximized", "--no-sandbox", `--proxy-server="direct://"`, "--proxy-bypass-list=*")
+      // launchOptions.args.push("--ignore-certificate-errors", "--disable-gpu", "--window-size=1920,1080", "--start-maximized", "--no-sandbox")
 
       return launchOptions
     }
