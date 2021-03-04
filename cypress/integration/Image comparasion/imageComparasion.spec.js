@@ -12,7 +12,7 @@ describe('Home page tests', () => {
     });
 
     it('Should match an element snapshot', () => {
-        page.matchElementSnapshot('h1')
+        page.matchElementSnapshot(':nth-child(5) > a')
     });
 
 });
