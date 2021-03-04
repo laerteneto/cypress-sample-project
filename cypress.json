@@ -1,6 +1,5 @@
 {
     "projectId": "15zcyz",
-    "baseUrl": "http://automationpractice.com/",
     "chromeWebSecurity": false,
     "trashAssetsBeforeRuns": false,
     "integrationFolder": "cypress/integration/",

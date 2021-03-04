@@ -3,7 +3,19 @@ class BasePage {
     cy.document().toMatchImageSnapshot({
       imageConfig: {
         createDiffImage: true, // Should a "diff image" be created, can be disabled for performance
-        threshold: 0.1, // Amount in pixels or percentage before snapshot image is invalid
+        threshold: 0, // Amount in pixels or percentage before snapshot image is invalid
+        thresholdType: "percent", // Can be either "pixel" or "percent",
+        resizeDevicePixelRatio: true, // Resize image to base resolution when Cypress is running on high DPI screen, `cypress run` always runs on base resolution
+      },
+      separator: " ", // Naming resulting image file with a custom separator rather than using the default ` #`
+    });
+  }
+
+  matchElementSnapshot(locator) {
+    cy.get(`${locator}`).toMatchImageSnapshot({
+      imageConfig: {
+        createDiffImage: true, // Should a "diff image" be created, can be disabled for performance
+        threshold: 0, // Amount in pixels or percentage before snapshot image is invalid
         thresholdType: "percent", // Can be either "pixel" or "percent",
         resizeDevicePixelRatio: true, // Resize image to base resolution when Cypress is running on high DPI screen, `cypress run` always runs on base resolution
       },

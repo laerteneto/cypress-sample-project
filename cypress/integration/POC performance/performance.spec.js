@@ -1,14 +1,15 @@
 import BasePage from '../../support/pages/basePage';
 
 describe('Performance execution', () => {
-    const basePage = new BasePage();
+    const basePage = new BasePage()
+    const times = 3
     
     beforeEach(() => {
-        cy.visit('/')
+        cy.visit('https://the-internet.herokuapp.com/')
     });
 
-    Cypress._.times(1, (k) => {
-        it(`Login positive  ${k + 1} / 1`, () => {
+    Cypress._.times(times, (k) => {
+        it(`Login positive  ${k + 1} / ${times}`, () => {
             basePage.clickElementByText("Form Authentication")
             basePage.typeInputValueById("#username", "tomsmith")
             basePage.typeInputValueById("#password", "SuperSecretPassword!")

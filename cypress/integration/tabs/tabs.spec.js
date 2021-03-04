@@ -10,11 +10,11 @@ describe("Tab execution", () => {
     // basePage.typeInputValueById("#Username", "test-gsadmin-1")
     // basePage.typeInputValueById("#Password", "GShares12345")
     // basePage.clickElementByText("Sign In")
+    cy.visit("https://ea.dev.regression.rc/")
   });
 
   it(`C160892- Tab support with target=blank removal`, () => {
     // Login
-    cy.visit("https://ea.dev.regression.rc/")
     basePage.typeInputValueById("#Username", "test-gsadmin-1")
     basePage.typeInputValueById("#Password", "GShares12345")
     basePage.clickElementByText("Sign In")
@@ -57,7 +57,6 @@ describe("Tab execution", () => {
 
   it.only(`C160892- Tab support with target=blank removal - Client without underscore`, () => {
     // Login
-    cy.visit("https://ea.dev.regression.rc/")
     basePage.typeInputValueById("#Username", "test-gsadmin-1")
     basePage.typeInputValueById("#Password", "GShares12345")
     basePage.clickElementByText("Sign In")

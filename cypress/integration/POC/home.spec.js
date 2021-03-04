@@ -4,7 +4,7 @@ describe('Home page tests', () => {
     const homePage = new HomePage();
     
     beforeEach(() => {
-        cy.visit('/')
+        cy.visit('http://automationpractice.com/')
     });
 
     it('Home screen is diplayed', () => {
