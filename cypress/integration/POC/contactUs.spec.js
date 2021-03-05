@@ -1,12 +1,12 @@
 import ContactUsPage from '../../support/pages/contactUsPage';
 
-let contactUsUrl = Cypress.env('contactUsUrl');
+const contactUsUrl = Cypress.env('contactUsUrl');
 
 describe('Contact us tests', () => {
     const contacUsPage = new ContactUsPage();
 
     beforeEach(() => {
-        cy.visit(contactUsUrl); 
+        cy.visit(contactUsUrl);
     });
 
     it('Send a message as customer service', () => {

@@ -7,11 +7,6 @@ describe('Home page tests', () => {
         cy.visit('http://automationpractice.com/')
     });
 
-    it('Home screen is diplayed', () => {
-        cy.url().should("contain", Cypress.env('frontUrl') + "index.php");
-        homePage.matchPageSnapshot()
-    });
-
     it('Should display all available sections (women, dresses and t-shirts)', () => {
         homePage.getMenuCategoryLink('Women').should("be.visible")
         homePage.getMenuCategoryLink('Dresses').should("be.visible")

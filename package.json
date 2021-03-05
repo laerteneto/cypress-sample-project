@@ -17,6 +17,9 @@
     "cy:run:edge": "cypress run --browser edge --headless",
     "cy:run:api": "cypress run --browser chrome --headless --spec \"**/api/**/*.spec.js\"",
 
+    " --- CYPRESS DASHBOARD ---- ": "",
+    "cy:run:dash": "cypress run --headless --record --key 3d995e29-f0f8-4a9f-b1af-cda7ea96b918", 
+
     " --- MOCHAWESOME REPORT SCRIPTS ---- ": "",
     "cy:run:headless:mocha": "yarn cy:clean:results && yarn cy:run:headless",
     "cy:posttest:results": "yarn cy:merge:results && yarn cy:final:results",

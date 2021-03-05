@@ -1,11 +1,11 @@
 {
-    "projectId": "15zcyz",
+    "projectId": "uo4z1m",
     "chromeWebSecurity": false,
     "trashAssetsBeforeRuns": false,
     "integrationFolder": "cypress/integration/",
     "testFiles": ["**/*.feature", "**/*.spec.js"],
     "numTestsKeptInMemory": 15,
-    "video": false,
+    "video": true,
     "defaultCommandTimeout": 10000,
     "viewportWidth": 1280,
     "viewportHeight": 720,
@@ -14,8 +14,7 @@
       "runMode": 1,
       "openMode": 0
     },
-    "screenshotOnRunFailure": false,
-    "screenshotsFolder": "cypress/test-results/assets/",
+    "screenshotOnRunFailure": true,
     "screenshotConfig": {
       "scale": false
     },
@@ -31,8 +30,7 @@
     },
     "env": {
       "apiUrl": "localhost:3001/",
-      "frontUrl": "http://automationpractice.com/",
-      "contactUsUrl": "index.php?controller=contact"
+      "contactUsUrl": "http://automationpractice.com/index.php?controller=contact"
     }
   }
   

@@ -2,7 +2,7 @@
 
 import BasePage from "../../support/pages/basePage";
 
-describe("Tab execution", () => {
+describe.skip("Tab execution", () => {
   const basePage = new BasePage();
 
   beforeEach(() => {
@@ -55,7 +55,7 @@ describe("Tab execution", () => {
     cy.xpath('//*[@id="FilteredList"]/div[2]/table/tbody/tr[38]/td[4]').should('have.text','Deal9 Deal9')
   });
 
-  it.only(`C160892- Tab support with target=blank removal - Client without underscore`, () => {
+  it(`C160892- Tab support with target=blank removal - Client without underscore`, () => {
     // Login
     basePage.typeInputValueById("#Username", "test-gsadmin-1")
     basePage.typeInputValueById("#Password", "GShares12345")
@@ -99,14 +99,14 @@ describe("Tab execution", () => {
   });
 
 
-  it.skip(`Test base url null`, () => {
+  it(`Test base url null`, () => {
       cy.visit("https://haspurchaseplan_sip.dev.regression.rc/en")
     //   cy.visit("www.google.com")
       cy.xpath("//h1[text() = 'Company EquityGateway']").should('be.visible')
   });
 
 
-  it.skip(`C119375- Tab support with target=blank removal - client Activation_1`, () => {
+  it(`C119375- Tab support with target=blank removal - client Activation_1`, () => {
     cy.get('.chosen-single > span').click()
     cy.xpath('//*[@id="client_chosen"]/div/div/input').type('Activation_1{enter}')
     cy.get(':nth-child(1) > .selectable > h4').click()
