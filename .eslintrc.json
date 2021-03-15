@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint:recommended", "plugin:cypress/recommended"],
+  "rules": {
+    "cypress/no-unnecessary-waiting": "warn",
+    "no-undef": "off"
+  }
+}

@@ -6,6 +6,7 @@ describe('Performance execution', () => {
     
     beforeEach(() => {
         cy.visit('https://the-internet.herokuapp.com/')
+        // cy.wait(1000) // remove comment to test the elint plugin for Cypress
     });
 
     Cypress._.times(times, (k) => {

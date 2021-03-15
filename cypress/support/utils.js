@@ -1,3 +1,6 @@
+/**
+ * Basic methods that can be used. Also called helpers
+ */
 class Utils {
   /**
    * Get a data in a list with the format {month, day, year}.
