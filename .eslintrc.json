@@ -8,7 +8,6 @@
     "ecmaFeatures": {}
   },
   "rules": {
-    "no-unused-vars": "warn",
     "cypress/no-unnecessary-waiting": "error",
     "constructor-super": "error",
     "for-direction": "error",
@@ -73,6 +72,7 @@
     "no-useless-concat": "error",
     "no-useless-rename": "error",
     "no-useless-return": "error",
+    "no-unused-vars": "warn",
     "no-var": "error",
     "prefer-const": "error",
     "prefer-arrow-callback": "error",

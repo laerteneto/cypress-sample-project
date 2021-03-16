@@ -71,13 +71,6 @@ describe.skip('Tab execution', () => {
     cy.get(':nth-child(1) > .selectable > h4').click()
     cy.get(':nth-child(1) > .selectable').click()
 
-    // Save url if we want to get it back
-    // eslint-disable-next-line cypress/no-assigning-return-values
-    let urlToComeBackAfterTab = cy.url().then(url => {
-      urlToComeBackAfterTab = url
-    })
-    cy.then(() => console.log('++++++++++++++++++++++++++++++++++ ' + urlToComeBackAfterTab))
-
     // Tab handling
     cy.xpath('//*[@id="FilteredList"]/div[2]/table/tbody/tr[1]/td[1]/a[2]')
       .invoke('removeAttr', 'target')

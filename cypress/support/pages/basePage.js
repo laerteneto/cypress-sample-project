@@ -1,5 +1,6 @@
 class BasePage {
   matchPageSnapshot() {
+    // @ts-ignore
     cy.document().toMatchImageSnapshot({
       imageConfig: {
         createDiffImage: true, // Should a "diff image" be created, can be disabled for performance
@@ -13,6 +14,7 @@ class BasePage {
   }
 
   matchElementSnapshot(locator) {
+    // @ts-ignore
     cy.get(`${locator}`).toMatchImageSnapshot({
       imageConfig: {
         createDiffImage: true, // Should a "diff image" be created, can be disabled for performance

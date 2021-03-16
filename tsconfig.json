@@ -3,6 +3,7 @@
     "module": "commonjs",
     "target": "es2015",
     "outDir": "./dist",
+    "types": ["cypress"],
     "allowJs": true,
     "checkJs": true,
     "strict": true,
@@ -14,6 +15,6 @@
     "strictNullChecks": true,
     "sourceMap": false
   },
-  "include": ["./cypress"],
+  "include": ["./cypress", "**/*.ts"],
   "exclude": ["node_modules"]
 }

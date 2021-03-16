@@ -15,7 +15,6 @@ describe('Performance execution', () => {
       basePage.typeInputValueById('#username', 'tomsmith')
       basePage.typeInputValueById('#password', 'SuperSecretPassword!')
       basePage.clickElementByText(' Login')
-      basePage.getElementByContainsText('Welcome to the Secure Area. When you are done click logout below.').should('be.visible')
     })
   })
 })
