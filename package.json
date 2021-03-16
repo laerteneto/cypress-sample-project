@@ -1,5 +1,6 @@
 {
   "name": "admintestscypresspoc",
+  "private": true,
   "version": "0.0.1",
   "description": "Cypress POC for the new admin portal",
   "author": "Laerte Mello",
@@ -32,7 +33,8 @@
     "lint:fix": "yarn eslint:fix && yarn prettier:fix",
     "prettier:cli": "prettier \"**/*.js\"",
     "prettier:check": "yarn prettier:cli -l",
-    "prettier:fix": "yarn prettier:cli --write --single-quote"
+    "prettier:fix": "yarn prettier:cli --write --single-quote",
+    "postinstall": "husky install"
   },
   "keywords": [
     "tests",
@@ -53,6 +55,7 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-mocha": "^6.2.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^5.1.3",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
