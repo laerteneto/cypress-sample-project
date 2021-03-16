@@ -24,10 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-const executeCommand = (command) => {
-    cy.task("pluginExecuteCommand", command);
-  };
-  
-import "cypress-waitfor";
-  
-export default executeCommand;
+const executeCommand = command => {
+  cy.task('pluginExecuteCommand', command)
+}
+
+import 'cypress-waitfor'
+
+export default executeCommand

@@ -1,18 +1,17 @@
-import BasePage from '../../support/pages/basePage';
+import BasePage from '../../support/pages/basePage'
 
 describe('Home page tests', () => {
-    const page = new BasePage();
-    
-    beforeEach(() => {
-        cy.visit('cypress/support/resources/test.html')
-    });
+  const page = new BasePage()
 
-    it('Should match the snapshot', () => {
-        page.matchPageSnapshot()
-    });
+  beforeEach(() => {
+    cy.visit('cypress/support/resources/test.html')
+  })
 
-    it('Should match an element snapshot', () => {
-        page.matchElementSnapshot(':nth-child(5) > a')
-    });
+  it('Should match the snapshot', () => {
+    page.matchPageSnapshot()
+  })
 
-});
+  it('Should match an element snapshot', () => {
+    page.matchElementSnapshot(':nth-child(5) > a')
+  })
+})
