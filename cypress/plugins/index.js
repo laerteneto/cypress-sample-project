@@ -14,6 +14,7 @@
 // the project's config changing)
 
 const { initPlugin } = require('cypress-plugin-snapshots/plugin')
+const cucumber = require('cypress-cucumber-preprocessor').default
 
 /**
  * @type {Cypress.PluginConfig}
@@ -39,4 +40,7 @@ module.exports = (on, config) => {
   })
 
   initPlugin(on, config)
+  on('file:preprocessor', cucumber())
+
+  return config
 }
