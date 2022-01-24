@@ -1,0 +1,9 @@
+node_modules
+cypress/screenshots/
+cypress/test-results/
+results
+videos
+.vs
+**/.DS_Store
+test-results.xml
+yarn-error.log
